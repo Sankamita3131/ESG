@@ -1,4 +1,4 @@
-# ESG평가가 기업 가치 측정의 기준으로 적절한가?
+# ESG Grade EDA
 
 ## Summary
 
@@ -68,7 +68,7 @@ ESG 등급과 관련된 데이터를 분석하여 기업 평가에 적절한지�
     | 이름 | 설명 | Method | Source |
     | --- | --- | --- | --- |
     | KCGS ESG Rating | 한국ESG기준원 ESG등급 데이터<br>- 기간 : 2011년~2018년 |Web Scraping|[KRX 정보데이터시스템](https://data.krx.co.kr/contents/MDC/HARD/hardController/MDCHARD050.cmd#none)|   
-    | KRX KOSPI 200    Index Components | KRX KOSPI 200 지수 구성종목 정보<br>- 기간 : 2010-06-30~2018-06-31<br>- 매년 06월 말일과 12월 말일에 대한 데이터 | Download | [KRX 정보데이터시스템](http://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201010106) |
+    | KRX KOSPI 200 Index Components | KRX KOSPI 200 지수 구성종목 정보<br>- 기간 : 2010-06-30~2018-06-31<br>- 매년 06월 말일과 12월 말일에 대한 데이터 | Download | [KRX 정보데이터시스템](http://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201010106) |
     | KRX KOSPI 200 Index Components Stock Price | KRX KOSPI 200 지수 구성종목의 주식가격 데이터<br>- 기간 : 2011년~2018년 | API | [FinanceDataReader](https://github.com/financedata-org/FinanceDataReader) |
     | DART corpCode | 금융감독원 고유번호 | API |[금융감독원 고유번호](https://opendart.fss.or.kr/guide/detail.do?apiGrpCd=DS001&apiId=2019018)|
     | DART company | 금융감독원 공시정보 기업개황 | API | [금융감독원 공시정보 기업개황](https://opendart.fss.or.kr/guide/detail.do?apiGrpCd=DS001&apiId=2019002) |
@@ -77,11 +77,14 @@ ESG 등급과 관련된 데이터를 분석하여 기업 평가에 적절한지�
     | KRX KOSPI 200 ESG Index Price | 한국거래소 KOSPI 200 ESG 지수 가격 데이터<br>- 기간 : 2010-06-31~2022-06-31 | Download | [KRX 정보데이터시스템](http://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201010105) |
 
 
-## EDA : `KCGS ESG Rating`
+## EDA
+
+### `KCGS ESG Rating`
 
 - 2011년~2018년 기준, ESG종합 등급별 평균 기업체 수 확인
     - 분석한 기간 중 **대다수의 기업체가 B등급**으로 **약 80%의 비중을 차지**했다.
-
+    ![]()
+    
 - 2011년~2018년 기준, ESG종합 등급 추이
     - ESG종합 등급을 받는 기업체 수는 매년 증가 추세를 보이며,  **매년 ESG종합 등급에서 B등급을 받은 기업체 수가 많다**는 것을 알 수 있다.
 
