@@ -133,7 +133,7 @@ ESG 등급과 관련된 데이터를 분석하여 기업 평가에 적절한지�
     
     **[Fig 2-6]**  
     `KOSPI 200 Index VS KOSPI 200 ESG Index` 종가
-    ![[Fig 2-6]](https://github.com/mols3131d/ESG_Grade-EDA/blob/main/fig/md/Fig2-6.png)
+    ![[Fig 2-6] `KOSPI 200 Index VS KOSPI 200 ESG Index` 종가](https://github.com/mols3131d/ESG_Grade-EDA/blob/main/fig/md/Fig2-6.png)
     
 
 - 연도별 등락률 비교
@@ -141,51 +141,95 @@ ESG 등급과 관련된 데이터를 분석하여 기업 평가에 적절한지�
     두 지수 간의 등락률 또한 매우 유사하게 움직이는 것으로 보인다.
     
     **[Fig 2-7]**  
-    `KOSPI 200 Index VS KOSPI 200 ESG Index` 등락률 
-    ![[Fig 2-7]](https://github.com/mols3131d/ESG_Grade-EDA/blob/main/fig/md/Fig2-7.png)
+    `KOSPI 200 Index VS KOSPI 200 ESG Index` 등락률  
+    ![[Fig 2-7] `KOSPI 200 Index VS KOSPI 200 ESG Index` 등락률 ](https://github.com/mols3131d/ESG_Grade-EDA/blob/main/fig/md/Fig2-7.png)
 
 
 
----
----
-- 가설 설정
-**ESG가 기업의 가치 평가에 적절한가**
+### 연도, ESG 등급별 주가
 
-- **KOSPI200 지수**와 **KOSPI200 ESG 지수** 비교
+- 종목별로 주식의 가격 규모가 다르기 때문에 종목 별로 Min-Max Scaling 적용 후 분석하였다.
+- 대체로 등급이 높을 때 주가가 높은 것으로 보이는데, 상대적으로 ESG가 관심이 높은 시기인 2017년 이후 더 경향이 큰 것으로 보인다.
+    
+    **[Fig 2-8]**  
+    연도, ESG 등급별 주가 - ESG종합 등급  
+    ![[Fig 2-8] 연도, ESG 등급별 주가 - ESG종합 등급](https://github.com/mols3131d/ESG_Grade-EDA/blob/main/fig/md/Fig2-8.png)
+    
+    **[Fig 2-9]**  
+    연도, ESG 등급별 주가 - E(환경) 등급  
+    ![[Fig 2-9] 연도, ESG 등급별 주가 - E(환경) 등급](https://github.com/mols3131d/ESG_Grade-EDA/blob/main/fig/md/Fig2-9.png)
+    
+    **[Fig 2-10]**  
+    연도, ESG 등급별 주가 - S(사회적구조) 등급  
+    ![[Fig 2-10] 연도, ESG 등급별 주가 - S(사회적구조) 등급](https://github.com/mols3131d/ESG_Grade-EDA/blob/main/fig/md/Fig2-10.png)
+    
+    **[Fig 2-11]**  
+    연도, ESG 등급별 주가 - G(지배구조) 등급  
+    ![[Fig 2-11] 연도, ESG 등급별 주가 - G(지배구조) 등급](https://github.com/mols3131d/ESG_Grade-EDA/blob/main/fig/md/Fig2-11.png)
+    
+    
 
-- **ESG 평가**와 **기업 주가** 비교
+### 연도, ESG 등급별 재무제표
 
-- **KOSPI200 지수**와 **KOSPI200 ESG 지수** 비교
+- 매출과 영업이익 등 높은 등급(A+, A)의 경우가 더 높은 것으로 보인다.
+    
+    **[Fig 2-12]**  
+    연도, ESG 등급별 기업매출금액 - ESG종합 등급  
+    ![[Fig 2-12] 연도, ESG 등급별 기업매출금액 - ESG종합 등급](https://github.com/mols3131d/ESG_Grade-EDA/blob/main/fig/md/Fig2-12.png)
+    
+    **[Fig 2-13]**  
+    연도, ESG 등급별 기업영업이익 - ESG종합 등급  
+    ![[Fig 2-13] 연도, ESG 등급별 기업영업이익 - ESG종합 등급](https://github.com/mols3131d/ESG_Grade-EDA/blob/main/fig/md/Fig2-13.png)
 
-    <img src="https://user-images.githubusercontent.com/115917627/215096247-b7a7439c-6b2e-4d69-b4f8-190b0a8f74bc.png" weight="200" height="400">
 
-- 연도별 종가 비교 : KOSPI200 ESG 종가를 산출하기 시작한 2019년 기준으로 보면 두 지수의 변화 추이는 비슷하지만 ESG 평가를 추가한 ESG 지수가 더 높은 종가를 보여주고 있는데, 이는 코스피200ESG지수가 상대적으로 우량한 기업의 영향을 더 받기 때문으로 보인다.
- 
-    <img src="https://user-images.githubusercontent.com/115917627/215096480-c14b24ec-b7f9-4515-a2e0-027f385c3fcb.png" weight="200" height="400">
+- 종목 별로 Min-Max Scaling 적용
 
-- 연도별 등락률 비교: 두 지수간의 등락률은 매우 유사하게 움직이는 것으로 보인다.
- 
-    <img src="https://user-images.githubusercontent.com/115917627/215096655-fa8e5536-0bda-4987-871e-c66c6709bd19.png" weight="200" height="400">
+    하지만, 종목 별로 MinMax 스케일링을 적용한 데이터로 보았을 때, 차이는 미미한 것으로 보여,  
+    위의 경우는 높은 등급에 상대적으로 큰 규모의 회사들이 많이 분포하여 나타난 것으로 보인다.
 
-- 연도별 거래량 비교: 두 지수의 변화 추이는 비슷한 것으로 보입니다.
+    - 기업매출금액
+    
+        **[Fig 2-14]**        
+        연도, ESG 등급별 기업매출금액 - ESG종합 등급 (Min-Max Scaling)  
+        ![[Fig 2-14] 연도, ESG 등급별 기업매출금액 - ESG종합 등급 (Min-Max Scaling)](https://github.com/mols3131d/ESG_Grade-EDA/blob/main/fig/md/Fig2-14.png)
 
-## **ESG 평가**와 **기업 주가** 비교
+    - 기업영업이익
+    
+        **[Fig 2-15]**  
+        연도, ESG 등급별 기업영업이익 - ESG종합 등급 (Min-Max Scaling)  
+        ![[Fig 2-15] 연도, ESG 등급별 기업영업이익 - ESG종합 등급 (Min-Max Scaling)](https://github.com/mols3131d/ESG_Grade-EDA/blob/main/fig/md/Fig2-15.png)
 
-    <img src="https://user-images.githubusercontent.com/115917627/215100517-1732ef36-6e72-4f02-95ae-bff03cc6675f.png" weight="200" height="300">
+        
+### 연도, ESG 등급별 주가, 재무제표 상관계수
 
-- 환경에 대한 기업들의 관심은 이전에도 높은 편이였기 때문에 ESG 평가 초기에도 높은 등급을 유지하다 잠시 주춤한 뒤 전체적으로 등급이 상승하는 모습을 보여주고 있습니다.
+ESG등급 간의 양의 상관관계가 있는 것으로 보이지만, 종가나 제무재표 데이터와는 상관관계가 거의 없는것으로 보인다.
 
-    <img src="https://user-images.githubusercontent.com/115917627/215100541-16cd7244-5813-49b3-b513-b1255b59cbe8.png" weight="200" height="300">
+- heatmap
 
-- 사회적 책임에 대한 기업 등급 분포를 확인해보면 ESG 평가 초기에는 낮은 등급을 유지하다 2015년을 기점으로 상승하는 모습을 볼 수 있습니다.
+    **[Fig 2-16]**  
+    연도, ESG 등급별 주가, 재무제표 상관계수 - heatmap  
+    ![[Fig 2-16] 연도, ESG 등급별 주가, 재무제표 상관계수 - heatmap](https://github.com/mols3131d/ESG_Grade-EDA/blob/main/fig/md/Fig2-16.png)
 
-    <img src="https://user-images.githubusercontent.com/115917627/215100568-4cea7313-229f-4bb8-b7cd-675ddcd5d4e8.png" weight="200" height="300">
+- regplot
 
-- 지배구조 역시 ESG 평가 초기에는 기업들이 크게 등급에 신경을 쓰지 않았지만 코스피 200 ESG 지수를 산출하기 시작한 2019년부터 급상승하는 모습을 볼 수 있습니다.
+    **[Fig 2-17]**  
+    연도, ESG 등급별 주가, 재무제표 상관계수 - regplot  
+    ![[Fig 2-17] 연도, ESG 등급별 기업영업이익 - ESG종합 등급 (Min-Max Scaling)](https://github.com/mols3131d/ESG_Grade-EDA/blob/main/fig/md/Fig2-17.png)
 
-    <img src="https://user-images.githubusercontent.com/115917627/215100490-4dd7c6cf-0245-4289-b307-fc724852a06e.png" weight="200" height="300">
+- p-value
 
-- ESG 각각 등급에서 공통적인 특징은 ESG 평가를 도입한 직후에는 상대적으로 낮은 등급의 비율이 높았는데 ESG 관심이 높아지기 시작한 최근 데이터를 보면 높은 등급의 평가가 높은 비중을 차지하고 있는 것을 볼 수 있습니다.
+    **[Fig 2-18]**  
+    연도, ESG 등급별 주가, 재무제표 상관계수 - p-value  
+    ![[Fig 2-18] 연도, ESG 등급별 주가, 재무제표 상관계수 - p-value](https://github.com/mols3131d/ESG_Grade-EDA/blob/main/fig/md/Fig2-18.png)
+
+# 결론
+
+## 분석 결과
+
+- 연도별 ESG종합 등급을 분석했을 때, 매년 기업체 수가 증가하는 것으로 보아 기업들의 ESG 활동에 대한 관심이 커지고 있는 것으로 보인다.
+- 연도별, ESG등급별 주가를 분석했을 때, 대체로 높은 ESG등급을 받은 경우에 주가도 높게 나타나는 경향이 있다.
+- 연도별, ESG등급별 재무제표를 분석했을 때, ESG등급과 재무제표는 상관성이 없는 것으로 보인다.
+
 
 ---
 
