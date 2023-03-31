@@ -1,6 +1,6 @@
 # ESG평가가 기업 가치 측정의 기준으로 적절한가?
 
-# Summary
+## Summary
 
 - 최근 ESG 관련 지표에 관심을 가지는 기업과 투자자들이 많아지는 추세이며, 통해 ESG가 기업의 지속가능성 및 장기적인 가치 창출을 평가하는 중요한 기준이 된다는 연구도 있다. 하지만, 비효율적 경영이라는 부정적인 견해도 있는 실정이다.
     
@@ -15,35 +15,38 @@
     - 상관분석
 
 - 연도별 ESG종합 등급을 분석했을 때, 매년 기업체 수가 증가하는 것으로 보아 기업들의 ESG 활동에 대한 관심이 커지고 있는 것으로 보인다.
-    
     연도별, ESG등급별 주가를 분석했을 때, 대체로 높은 ESG등급을 받은 경우에 주가도 높게 나타나는 경향이 있다.
-    
     연도별, ESG등급별 재무제표를 분석했을 때, ESG등급과 재무제표는 상관성이 없는 것으로 보인다.
-    
----
 
-# Before
+
 ## Team member
+
 |팀원|역할|
-|:---:|:---:|
-|<span style="color:blue">[조현준(팀장)](https://github.com/chohj118)|데이터 수집 · 전처리 · 시각화(코스피200 기업 주가), PPT, 발표|
-|<span style="color:blue">[이혜빈](https://github.com/dkssudgb)|데이터 수집 · 전처리 · 시각화(코스피200 기업 ESG지수)| 
-|<span style="color:blue">[박성용](https://github.com/mols3131d)|데이터 수집 · 전처리 · 시각화(재무제표, 코스피200 개별 종목 ESG 평가 전처리)| 
-|<span style="color:blue">[노나은](https://github.com/better-noh)|데이터 수집 · 전처리 · 시각화(ESG 평가등급, 네이버 ESG 관련 뉴스기사)| 
-|<span style="color:blue">이주민|데이터 수집 · 전처리 · 시각화(코스피200), PPT|
+|:---:|---|
+|[조현준(팀장)](https://github.com/chohj118)|데이터 수집 · 전처리 · 시각화(코스피200 기업 주가), PPT, 발표|
+|[이혜빈](https://github.com/dkssudgb)|데이터 수집 · 전처리 · 시각화(코스피200 기업 ESG지수)| 
+|[박성용](https://github.com/mols3131d)|데이터 수집 · 전처리 · 시각화(재무제표, 코스피200 개별 종목 ESG 평가 전처리)| 
+|[노나은](https://github.com/better-noh)|데이터 수집 · 전처리 · 시각화(ESG 평가등급, 네이버 ESG 관련 뉴스기사)| 
+|이주민|데이터 수집 · 전처리 · 시각화(코스피200), PPT|
+
 
 ---
+
 
 # 1. 개요
 
+
 ## 소개
 기업의 KCGS ESG 등급을 통해 기업의 주식가격과 재무제표를 분석하고, KOSPI200과 KOSPI200ESG 지수를 비교하여 분석하는 프로젝트
+
 
 ## 배경
 - 최근 ESG 관련 지표에 관심을 가지는 기업과 투자자들이 많아지는 추세이며, 다양한 연구를 통해 **ESG가 기업의 지속가능성 및 장기적인 가치 창출을 평가하는 중요한 기준**이 된다고 보고있다.
 - ESG 평가 등급과 다른 평가 지표와의 비교를 통해 인사이트를 도출해보기 위해 주제를 선정하였습니다.
 
+
 ### 선행연구
+
 - 황성준 and 오상희. (2021). [코스피 200 ESG 지수의 종목변경에 대한 시장반응](https://www.kyungnam.ac.kr/riim/5339/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGcmlpbSUyRjg5MCUyRjk1NzIwJTJGYXJ0Y2xWaWV3LmRvJTNGcGFnZSUzRDElMjZzcmNoQ29sdW1uJTNEJTI2c3JjaFdyZCUzRCUyNmJic0NsU2VxJTNEJTI2YmJzT3BlbldyZFNlcSUzRCUyNnJnc0JnbmRlU3RyJTNEJTI2cmdzRW5kZGVTdHIlM0QlMjZpc1ZpZXdNaW5lJTNEZmFsc2UlMjZwYXNzd29yZCUzRCUyNg%3D%3D). 지역산업연구, 44(4), 241-262.
     - 위 연구는 한국거래소(KRX) 코스피 200 ESG 지수 편입과 퇴출에 대한 주가반응 분석하였다.
     - 기업의 평균초과수익률과 코스피 200 ESG 지수 구성종목편입 유무를 보았을 때, 편입의 경우 유의한 양의 관계를 나타낸 반면, 퇴출은 음의 관계를 나타냈다.
@@ -53,6 +56,7 @@
     - 기업의 ESG 활동은 주가동조성과 유의한 양(＋)의 관련성이 있고, ESG 활동 기업은 개별기업의 고유정보가 주가에 충분히 반영되어 정보효율성이 높았다.
     - 위 연구에서는 ESG를 수행하는 기업은 주가에 충분한 정보가 반영된 것으로 보았다.
     
+    
 ### 기대효과
 ESG 등급과 관련된 데이터를 분석하여 기업 평가에 적절한지에 대해 인사이트를 도출
 
@@ -61,8 +65,6 @@ ESG 등급과 관련된 데이터를 분석하여 기업 평가에 적절한지�
 ## 활용 데이터 선정 및 수집
 
 - 활용 데이터
-    
-    
     | 이름 | 설명 | Method | Source |
     | --- | --- | --- | --- |
     | KCGS ESG Rating | 한국ESG기준원 ESG등급 데이터<br>- 기간 : 2011년~2018년 |Web Scraping|[KRX 정보데이터시스템](https://data.krx.co.kr/contents/MDC/HARD/hardController/MDCHARD050.cmd#none)|   
@@ -75,16 +77,29 @@ ESG 등급과 관련된 데이터를 분석하여 기업 평가에 적절한지�
     | KRX KOSPI 200 ESG Index Price | 한국거래소 KOSPI 200 ESG 지수 가격 데이터<br>- 기간 : 2010-06-31~2022-06-31 | Download | [KRX 정보데이터시스템](http://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201010105) |
 
 
+## EDA : `KCGS ESG Rating`
+
+- 2011년~2018년 기준, ESG종합 등급별 평균 기업체 수 확인
+    - 분석한 기간 중 **대다수의 기업체가 B등급**으로 **약 80%의 비중을 차지**했다.
+
+- 2011년~2018년 기준, ESG종합 등급 추이
+    - ESG종합 등급을 받는 기업체 수는 매년 증가 추세를 보이며,  **매년 ESG종합 등급에서 B등급을 받은 기업체 수가 많다**는 것을 알 수 있다.
+
+- 2011년~2018년 기준, E(환경) 등급 추이
+    - 매년 E(환경) 등급에서 B등급을 받은 기업체 수가 많으며, **2017년 유일하게 S등급을 받은 기업체 1곳이 등장**했다.
+
+- 2011년~2018년 기준, S(사회적구조) 등급 추이
+    - 매년 S(사회적구조) 등급에서 **B등급을 받은 기업체 수가 많다**.
+
+
+- 2011년~2018년 기준, G(지배구조) 등급 추이
+    - 매년 G(지배구조) 등급에서 **B등급을 받은 기업체 수가 많다**.
 
 
 
 
-
-
-
-
-
-
+---
+---
 - 가설 설정
 **ESG가 기업의 가치 평가에 적절한가**
 
