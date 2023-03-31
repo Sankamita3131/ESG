@@ -82,22 +82,67 @@ ESG 등급과 관련된 데이터를 분석하여 기업 평가에 적절한지�
 ### `KCGS ESG Rating`
 
 - 2011년~2018년 기준, ESG종합 등급별 평균 기업체 수 확인
-    - 분석한 기간 중 **대다수의 기업체가 B등급**으로 **약 80%의 비중을 차지**했다.
-    ![]()
+
+    분석한 기간 중 **대다수의 기업체가 B등급**으로 **약 80%의 비중을 차지**했다.
+    
+    **[Fig 2-1]**  
+    2011년~2018년, ESG종합 등급별 평균 기업체 수  
+    ![[Fig 2-1] 2011년~2018년, ESG종합 등급별 평균 기업체 수](https://github.com/mols3131d/ESG_Grade-EDA/blob/main/fig/md/Fig2-1.png)
     
 - 2011년~2018년 기준, ESG종합 등급 추이
-    - ESG종합 등급을 받는 기업체 수는 매년 증가 추세를 보이며,  **매년 ESG종합 등급에서 B등급을 받은 기업체 수가 많다**는 것을 알 수 있다.
+
+    ESG종합 등급을 받는 기업체 수는 매년 증가 추세를 보이며,  **매년 ESG종합 등급에서 B등급을 받은 기업체 수가 많다**는 것을 알 수 있다.
+    
+    **[Fig 2-2]**  
+    2011년~2018년, ESG종합 등급 추이  
+    ![[Fig 2-2] 2011년~2018년, ESG종합 등급 추이](https://github.com/mols3131d/ESG_Grade-EDA/blob/main/fig/md/Fig2-2.png)
 
 - 2011년~2018년 기준, E(환경) 등급 추이
-    - 매년 E(환경) 등급에서 B등급을 받은 기업체 수가 많으며, **2017년 유일하게 S등급을 받은 기업체 1곳이 등장**했다.
+
+    매년 E(환경) 등급에서 B등급을 받은 기업체 수가 많으며, **2017년 유일하게 S등급을 받은 기업체 1곳이 등장**했다.
+
+    **[Fig 2-3]**  
+    2011년~2018년 기준, E(환경) 등급 추이  
+    ![[Fig 2-3] 2011년~2018년 기준, E(환경) 등급 추이](https://github.com/mols3131d/ESG_Grade-EDA/blob/main/fig/md/Fig2-3.png)
 
 - 2011년~2018년 기준, S(사회적구조) 등급 추이
-    - 매년 S(사회적구조) 등급에서 **B등급을 받은 기업체 수가 많다**.
 
+    매년 S(사회적구조) 등급에서 **B등급을 받은 기업체 수가 많다**.
+
+    **[Fig 2-4]**  
+    2011년~2018년, S(사회적구조) 등급 추이  
+    ![[Fig 2-4] 2011년~2018년, S(사회적구조) 등급 추이](https://github.com/mols3131d/ESG_Grade-EDA/blob/main/fig/md/Fig2-4.png)
 
 - 2011년~2018년 기준, G(지배구조) 등급 추이
-    - 매년 G(지배구조) 등급에서 **B등급을 받은 기업체 수가 많다**.
 
+    매년 G(지배구조) 등급에서 **B등급을 받은 기업체 수가 많다**.
+
+    **[Fig 2-5]**  
+    2011년~2018년, G(지배구조) 등급 추이  
+    ![[Fig 2-5] 2011년~2018년, G(지배구조) 등급 추이](https://github.com/mols3131d/ESG_Grade-EDA/blob/main/fig/md/Fig2-5.png)
+
+
+
+### `KOSPI 200 Index VS KOSPI 200 ESG Index`
+
+- 연도별 종가 비교
+
+    KOSPI 200 지수와 KOSPI 200 ESG 지수의 종가가 거의 유사하게 나타나는 것을 볼 수 있다.
+    
+    이는 KOSPI 200 ESG 지수가 KOSPI 200 기업들 중 ESG 등급이 우수한 기업들을 기준으로 산출했기 때문으로 보인다.
+    
+    **[Fig 2-6]**  
+    `KOSPI 200 Index VS KOSPI 200 ESG Index` 종가
+    ![[Fig 2-6]](https://github.com/mols3131d/ESG_Grade-EDA/blob/main/fig/md/Fig2-6.png)
+    
+
+- 연도별 등락률 비교
+
+    두 지수 간의 등락률 또한 매우 유사하게 움직이는 것으로 보인다.
+    
+    **[Fig 2-7]**  
+    `KOSPI 200 Index VS KOSPI 200 ESG Index` 등락률 
+    ![[Fig 2-7]](https://github.com/mols3131d/ESG_Grade-EDA/blob/main/fig/md/Fig2-7.png)
 
 
 
